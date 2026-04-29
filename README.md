@@ -36,14 +36,16 @@ The pre-built macOS application is automatically generated and published in the 
 3. Extract the zip file and drag `singlish_writer.app` to your Applications folder.
 
 > ⚠️ **macOS Security Warning (Unidentified Developer)**
-> Because this app is open-source and not published through the Mac App Store or signed with a paid Apple Developer certificate, macOS Gatekeeper will show a warning ("*cannot be opened because the developer cannot be verified*") when you first try to open it.
+> Because this app is open-source and not published through the Mac App Store or signed with a paid Apple Developer certificate, macOS Gatekeeper will show a warning ("*Apple could not verify 'singlish_writer' is free of malware...*") and only give you the options to "Move to Trash" or "Done" when you first try to open it.
 > 
 > **To bypass this on the first run:**
-> 1. Do not double-click the app. Instead, **Right-Click (or Control-Click)** the `singlish_writer.app` icon.
-> 2. Select **Open** from the context menu.
-> 3. In the dialog that appears, click **Open** again. 
+> 1. Try to open the app normally first (you will see the warning). Click **Done**.
+> 2. Open your Mac's **System Settings** (from the Apple menu ).
+> 3. Click on **Privacy & Security** in the sidebar and scroll down to the "Security" section.
+> 4. You will see a message saying *singlish_writer was blocked from use because it is not from an identified developer*. Click the **Open Anyway** button next to it.
+> 5. Enter your Mac login password when prompted.
+> 6. In the final confirmation dialog, click **Open**.
 > You only need to do this the very first time!
-
 ## Building the App
 
 To build this app manually for macOS:
