@@ -34,3 +34,9 @@ To build this app manually for macOS:
 flutter build macos
 ```
 You will find the compiled application inside `build/macos/Build/Products/Release/singlish_writer.app`.
+
+---
+
+## 🟢 Privacy & Security
+
+🛡️ **100% Private & Offline**: This Unicode translator app runs entirely locally on your machine. It **does not** collect, track, or transmit any of your typing text, keystrokes, or personal user information. Your data remains completely secure and never leaves your device!
