@@ -27,6 +27,23 @@ This project is a modern Flutter port inspired by the work done in the [Singlish
 
 A special thanks to the original creators at the University of Colombo School of Computing (UCSC), who developed the foundational real-time font encoding tool that served as the base for this logic ([UCSC Real-time Converter](http://ucsc.lk/ltrl/services/feconverter/t1.html)).
 
+## Installation
+
+The pre-built macOS application is automatically generated and published in the **Releases** section of this repository.
+
+1. Go to the [Releases](https://github.com/RoshanGunarathna/singlish_writer/releases) tab.
+2. Download the latest `singlish_writer-macos.zip` file.
+3. Extract the zip file and drag `singlish_writer.app` to your Applications folder.
+
+> ⚠️ **macOS Security Warning (Unidentified Developer)**
+> Because this app is open-source and not published through the Mac App Store or signed with a paid Apple Developer certificate, macOS Gatekeeper will show a warning ("*cannot be opened because the developer cannot be verified*") when you first try to open it.
+> 
+> **To bypass this on the first run:**
+> 1. Do not double-click the app. Instead, **Right-Click (or Control-Click)** the `singlish_writer.app` icon.
+> 2. Select **Open** from the context menu.
+> 3. In the dialog that appears, click **Open** again. 
+> You only need to do this the very first time!
+
 ## Building the App
 
 To build this app manually for macOS:

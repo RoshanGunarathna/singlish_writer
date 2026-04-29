@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: [ "main" ]
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: macos-latest
@@ -34,3 +37,13 @@ jobs:
       with:
         name: singlish_writer-macos
         path: build/macos/Build/Products/Release/singlish_writer-macos.zip
+
+    - name: Publish GitHub Release
+      uses: softprops/action-gh-release@v2
+      if: github.ref == 'refs/heads/main'
+      with:
+        tag_name: "v1.0.${{ github.run_number }}"
+        name: "Release v1.0.${{ github.run_number }}"
+        files: build/macos/Build/Products/Release/singlish_writer-macos.zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
